@@ -1,0 +1,2641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by 123 (456) -->
+<SCL xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ext="http://www.lgcbm.com.cn" xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL c:\schema\SCL.xsd">
+	<Private type="Substation virtual terminal conection CRC">CD287350</Private>
+	<Header version="1.1" toolID="NREC PCS-SCD 3.6.0 Release" id="YTHDY-JN-Goose" nameStructure="IEDName">
+		<History>
+			<Hitem version="1.0" revision="0" when="2018-06-23" who="sijianlong" what="THDGY61850 Double LAN Device"/>
+		</History>
+	</Header>
+	<Communication>
+		<SubNetwork type="8-MMS" name="MMS">
+			<ConnectedAP iedName="YTHDY" apName="S1">
+				<Address>
+					<P type="OSI-AP-Title">1,3,9999,33</P>
+					<P type="OSI-AE-Qualifier">33</P>
+					<P type="OSI-PSEL">00 00 00 01</P>
+					<P type="OSI-SSEL">00 01</P>
+					<P type="OSI-TSEL">00 01</P>
+					<P type="IP-SUBNET">255.255.255.0</P>
+					<P type="IP">127.0.0.1</P>
+				</Address>
+				<GSE ldInst="DCPS01" cbName="gcbDCPS01Din">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-01</P>
+						<P type="APPID">1000</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="DCPS01" cbName="gcbDCPS01Ain">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-02</P>
+						<P type="APPID">1001</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="DCPS02" cbName="gcbDCPS02Din">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-03</P>
+						<P type="APPID">1002</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="DCPS02" cbName="gcbDCPS02Ain">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-04</P>
+						<P type="APPID">1003</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="ACPS01" cbName="gcbACPS01Din">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-05</P>
+						<P type="APPID">1004</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="ACPS01" cbName="gcbACPS01Ain">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-06</P>
+						<P type="APPID">1005</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="ACPS02" cbName="gcbACPS02Din">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-07</P>
+						<P type="APPID">1006</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="ACPS02" cbName="gcbACPS02Ain">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-08</P>
+						<P type="APPID">1007</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="UPSS01" cbName="gcbUPSS01Din">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-09</P>
+						<P type="APPID">1008</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="UPSS01" cbName="gcbUPSS01Ain">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-10</P>
+						<P type="APPID">1009</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="UPSS02" cbName="gcbUPSS02Din">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-11</P>
+						<P type="APPID">1010</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="UPSS02" cbName="gcbUPSS02Ain">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-12</P>
+						<P type="APPID">1011</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="CPSS01" cbName="gcbCPSS01Din">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-13</P>
+						<P type="APPID">1012</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="CPSS01" cbName="gcbCPSS01Ain">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-14</P>
+						<P type="APPID">1013</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="CPSS02" cbName="gcbCPSS02Din">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-15</P>
+						<P type="APPID">1014</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="CPSS02" cbName="gcbCPSS02Ain">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-16</P>
+						<P type="APPID">1015</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+				<GSE ldInst="MNTR" cbName="gcbMNTRDin">
+					<Address>
+						<P type="VLAN-ID">111</P>
+						<P type="VLAN-PRIORITY">4</P>
+						<P type="MAC-Address">01-0c-cd-01-00-17</P>
+						<P type="APPID">1016</P>
+					</Address>
+					<MinTime unit="s">1000</MinTime>
+					<MaxTime unit="s">3000</MaxTime>
+				</GSE>
+			</ConnectedAP>
+		</SubNetwork>
+	</Communication>
+	<IED name="YTHDY" desc="通信管理机" type="YTHDY" manufacturer="TonHe" configVersion="v1.00">
+		<Private type="IED virtual terminal conection CRC">84215615</Private>
+		<Services>
+			<DynAssociation/>
+			<GetDirectory/>
+			<GetDataObjectDefinition/>
+			<GetDataSetValue/>
+			<SetDataSetValue/>
+			<DataSetDirectory/>
+			<ReadWrite/>
+			<TimerActivatedControl/>
+			<GetCBValues/>
+			<GSEDir/>
+			<GOOSE max="38"/>
+			<GSSE max="38"/>
+			<FileHandling/>
+			<ConfLNs fixPrefix="true" fixLnInst="true"/>
+		</Services>
+		<AccessPoint name="S1" clock="false">
+			<Server desc="61850" timeout="30">
+				<Authentication/>
+				<LDevice inst="DCPS01" desc="1#直流电源">
+					<LN0 inst="" lnClass="LLN0" lnType="TH_LLN0">
+						<DataSet name="DCPS0101DsAin" desc="测量值数据集（总体、模块）">
+							<FCDA ldInst="DCPS01" lnClass="ZBAT" lnInst="1" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="ZBAT" lnInst="1" doName="AnIn2" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="MMXU" lnInst="1" doName="PPV" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="MMXU" lnInst="2" doName="PPV" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="3" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="3" doName="AnIn2" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="3" doName="AnIn3" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="3" doName="AnIn4" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="3" doName="AnIn5" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="3" doName="AnIn6" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="3" doName="AnIn7" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="9" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="9" doName="AnIn2" fc="MX"/>
+						</DataSet>
+						<DataSet name="DCPS0101DsDin" desc="状态信息数据集(进线、母线、模块、电池、直流屏主机开关量等)">
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="1" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="2" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="4" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="8" doName="Alm1" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="8" doName="Alm2" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="8" doName="Alm3" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="8" doName="Alm4" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="8" doName="Alm5" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="8" doName="Alm6" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="8" doName="Alm8" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="8" doName="Alm9" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="8" doName="Alm10" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="9" doName="SPCSO1" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="9" doName="SPCSO2" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="32" doName="AnIn1" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="32" doName="AnIn2" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="32" doName="AnIn3" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="32" doName="AnIn4" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="35" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="35" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="35" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="40" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="40" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="40" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="40" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="40" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="DCPS01" lnClass="GGIO" lnInst="40" doName="Ind6" fc="ST"/>
+						</DataSet>
+						<ReportControl name="DCPS0101DsAinRCB" desc="测量值数据集报告控制块(总体、模块)" datSet="DCPS0101DsAin" intgPd="1000" rptID="DCPS01/LLN0$RP$DCPS0101UrcbAin" confRev="1" buffered="false" bufTime="0">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<ReportControl name="DCPS0101DsDinRCB" desc="状态信息数据集报告控制块(进线、母线、模块、电池等)" datSet="DCPS0101DsDin" intgPd="1000" rptID="DCPS01/LLN0$BR$DCPS0101BrcbDin" confRev="1" buffered="false" bufTime="0">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<GSEControl appID="YTHDYDCPS01/LLN0.gcbDCPS01Ain" confRev="2" datSet="DCPS0101DsAin" name="gcbDCPS01Ain" type="GOOSE"/>
+						<GSEControl appID="YTHDYDCPS01/LLN0.gcbDCPS01Din" confRev="2" datSet="DCPS0101DsDin" name="gcbDCPS01Din" type="GOOSE"/>
+					</LN0>
+					<LN inst="1" lnClass="LPHD" lnType="TH_LPHD" desc="1#直流屏"/>
+					<LN inst="1" lnClass="ZBAT" lnType="TH_btgZBAT" desc="1#直流屏蓄电池组测量">
+						<DOI name="NamPlt" desc="1#直流屏铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="1#直流屏蓄电池组电压">
+							<DAI name="dU">
+								<Val>1#直流屏蓄电池组电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="1#直流屏蓄电池组放电电流">
+							<DAI name="dU">
+								<Val>1#直流屏蓄电池组放电电流</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="1" lnClass="MMXU" lnType="TH_aciMMXU_ACDC" desc="1#直流屏1#交流进线测量">
+						<DOI name="NamPlt" desc="1#直流屏1#交流进线铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏1#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PPV" desc="1#直流屏1#交流进线相电压">
+							<DAI name="dU">
+								<Val>1#直流屏1#交流进线相电压</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="2" lnClass="MMXU" lnType="TH_aciMMXU_ACDC" desc="1#直流屏2#交流进线测量">
+						<DOI name="NamPlt" desc="1#直流屏2#交流进线铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏2#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PPV" desc="1#直流屏2#交流进线相电压">
+							<DAI name="dU">
+								<Val>1#直流屏2#交流进线相电压</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="1" lnClass="GGIO" lnType="TH_gswGGIO_aci" desc="1#直流屏1#交流进线状态">
+						<DOI name="NamPlt" desc="1#直流屏1#交流进线铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏1#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="1#直流屏1#交流进线异常">
+							<DAI name="dU">
+								<Val>1#直流屏1#交流进线异常</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="2" lnClass="GGIO" lnType="TH_gswGGIO_aci" desc="1#直流屏2#交流进线状态">
+						<DOI name="NamPlt" desc="1#直流屏2#交流进线铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏2#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="1#直流屏2#交流进线异常">
+							<DAI name="dU">
+								<Val>1#直流屏2#交流进线异常</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="3" lnClass="GGIO" lnType="TH_dbmGGIO" desc="1#直流屏母线测量">
+						<DOI name="NamPlt" desc="1#直流屏铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="1#直流屏控母电压">
+							<DAI name="dU">
+								<Val>1#直流屏控母电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="1#直流屏负载电流">
+							<DAI name="dU">
+								<Val>1#直流屏负载电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn3" desc="1#直流屏母线正对地电压">
+							<DAI name="dU">
+								<Val>1#直流屏母线正对地电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn4" desc="1#直流屏母线负对地电压">
+							<DAI name="dU">
+								<Val>1#直流屏母线负对地电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn5" desc="1#直流屏母线正对地绝缘电阻">
+							<DAI name="dU">
+								<Val>1#直流屏母线正对地绝缘电阻</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn6" desc="1#直流屏母线负对地绝缘电阻">
+							<DAI name="dU">
+								<Val>1#直流屏母线负对地绝缘电阻</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn7" desc="1#直流屏交流串入电压">
+							<DAI name="dU">
+								<Val>1#直流屏交流串入电压</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="4" lnClass="GGIO" lnType="TH_aciGGIO_ac" desc="1#直流屏交流母线状态">
+						<DOI name="NamPlt" desc="1#直流屏交流母线铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏交流母线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#直流屏交流母线异常">
+							<DAI name="dU">
+								<Val>1#直流屏交流母线异常</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="8" lnClass="GGIO" lnType="TH_fliwGGIO" desc="1#直流屏母线告警">
+						<DOI name="NamPlt" desc="1#直流屏铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm1" desc="1#直流屏母线绝缘告警">
+							<DAI name="dU">
+								<Val>1#直流屏母线绝缘告警</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm2" desc="1#直流屏母线绝缘预警">
+							<DAI name="dU">
+								<Val>1#直流屏母线绝缘预警</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm3" desc="1#直流屏母线绝缘压差故障">
+							<DAI name="dU">
+								<Val>1#直流屏母线绝缘压差故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm4" desc="1#直流屏母线交流串入故障">
+							<DAI name="dU">
+								<Val>1#直流屏母线交流串入故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm5" desc="1#直流屏单母线环网故障">
+							<DAI name="dU">
+								<Val>1#直流屏单母线环网故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm6" desc="1#直流屏双母线互窜故障">
+							<DAI name="dU">
+								<Val>1#直流屏双母线互窜故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm8" desc="1#直流屏母线过压">
+							<DAI name="dU">
+								<Val>1#直流屏母线过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm9" desc="1#直流屏母线欠压">
+							<DAI name="dU">
+								<Val>1#直流屏母线欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm10" desc="1#直流屏JY005G-4A主机内部通信故障">
+							<DAI name="dU">
+								<Val>1#直流屏JY005G-4A主机内部通信故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="9" lnClass="GGIO" lnType="TH_cheGGIO" desc="1#直流屏充电装置">
+						<DOI name="NamPlt" desc="1#直流屏充电装置铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏充电装置铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="1#直流屏充电装置输出电压">
+							<DAI name="dU">
+								<Val>1#直流屏充电装置输出电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="1#直流屏充电装置输出电流">
+							<DAI name="dU">
+								<Val>1#直流屏充电装置输出电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SPCSO1" desc="1#直流屏充电装置蓄电池组均浮充切换">
+							<DAI name="ctlModel">
+								<Val>1</Val>
+							</DAI>
+							<DAI name="dU">
+								<Val>1#直流屏充电装置蓄电池组均浮充切换</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SPCSO2" desc="1#直流屏充电装置蓄电池组带载放电测试">
+							<DAI name="ctlModel">
+								<Val>1</Val>
+							</DAI>
+							<DAI name="dU">
+								<Val>1#直流屏充电装置蓄电池组带载放电测试</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="32" lnClass="GGIO" lnType="TH_almdcGGIO" desc="1#直流屏蓄电池组状态">
+						<DOI name="NamPlt" desc="1#直流屏铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="1#直流屏电池组过压">
+							<DAI name="dU">
+								<Val>1#直流屏电池组过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="1#直流屏电池组欠压">
+							<DAI name="dU">
+								<Val>1#直流屏电池组欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn3" desc="1#直流屏电池组过温">
+							<DAI name="dU">
+								<Val>1#直流屏电池组过温</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn4" desc="1#直流屏电池组故障">
+							<DAI name="dU">
+								<Val>1#直流屏电池组故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="35" lnClass="GGIO" lnType="TH_almGGIO_zl" desc="1#直流屏底层模块通讯故障">
+						<DOI name="NamPlt" desc="1#直流屏铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#直流屏主机内部通信故障">
+							<DAI name="dU">
+								<Val>1#直流屏主机内部通信故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="1#直流屏1#电池巡检通信故障">
+							<DAI name="dU">
+								<Val>1#直流屏1#电池巡检通信故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="1#直流屏2#电池巡检通信故障">
+							<DAI name="dU">
+								<Val>1#直流屏2#电池巡检通信故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="40" lnClass="GGIO" lnType="TH_gswGGIO_32" desc="1#直流屏主机开关量">
+						<DOI name="NamPlt" desc="1#直流屏主机开关量铭牌">
+							<DAI name="dU">
+								<Val>1#直流屏主机开关量铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#直流屏主机开关量1#状态量">
+							<DAI name="dU">
+								<Val>1#直流屏避雷器开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="1#直流屏主机开关量2#状态量">
+							<DAI name="dU">
+								<Val>1#直流屏避雷器故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="1#直流屏主机开关量3#状态量">
+							<DAI name="dU">
+								<Val>1#直流屏投母线开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="1#直流屏主机开关量4#状态量">
+							<DAI name="dU">
+								<Val>1#直流屏投电池开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="1#直流屏主机开关量5#状态量">
+							<DAI name="dU">
+								<Val>1#直流屏电池开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind6" desc="1#直流屏主机开关量6#状态量">
+							<DAI name="dU">
+								<Val>1#直流屏蓄电池总熔丝故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="DCPS02" desc="2#直流电源">
+					<LN0 inst="" lnClass="LLN0" lnType="TH_LLN0">
+						<DataSet name="DCPS0201DsAin" desc="测量值数据集（总体、模块）">
+							<FCDA ldInst="DCPS02" lnClass="ZBAT" lnInst="1" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="ZBAT" lnInst="1" doName="AnIn2" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="MMXU" lnInst="1" doName="PPV" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="MMXU" lnInst="2" doName="PPV" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="3" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="3" doName="AnIn2" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="3" doName="AnIn3" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="3" doName="AnIn4" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="3" doName="AnIn5" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="3" doName="AnIn6" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="3" doName="AnIn7" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="9" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="9" doName="AnIn2" fc="MX"/>
+						</DataSet>
+						<DataSet name="DCPS0201DsDin" desc="状态信息数据集(进线、母线、模块、电池、直流屏主机开关量等)">
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="1" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="2" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="4" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="8" doName="Alm1" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="8" doName="Alm2" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="8" doName="Alm3" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="8" doName="Alm4" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="8" doName="Alm5" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="8" doName="Alm6" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="8" doName="Alm8" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="8" doName="Alm9" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="8" doName="Alm10" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="9" doName="SPCSO1" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="9" doName="SPCSO2" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="32" doName="AnIn1" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="32" doName="AnIn2" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="32" doName="AnIn3" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="32" doName="AnIn4" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="35" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="35" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="35" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="40" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="40" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="40" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="40" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="40" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="DCPS02" lnClass="GGIO" lnInst="40" doName="Ind6" fc="ST"/>
+						</DataSet>
+						<ReportControl name="DCPS0201DsAinRCB" desc="测量值数据集报告控制块(总体、模块)" datSet="DCPS0201DsAin" intgPd="1000" rptID="DCPS02/LLN0$RP$DCPS0201UrcbAin" confRev="1" buffered="false" bufTime="50">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<ReportControl name="DCPS0201DsDinRCB" desc="状态信息数据集报告控制块(进线、母线、模块、电池等)" datSet="DCPS0201DsDin" intgPd="1000" rptID="DCPS02/LLN0$BR$DCPS0201BrcbDin" confRev="1" buffered="false" bufTime="50">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<GSEControl appID="YTHDYDCPS02/LLN0.gcbDCPS02Ain" confRev="2" datSet="DCPS0201DsAin" name="gcbDCPS02Ain" type="GOOSE"/>
+						<GSEControl appID="YTHDYDCPS02/LLN0.gcbDCPS02Din" confRev="2" datSet="DCPS0201DsDin" name="gcbDCPS02Din" type="GOOSE"/>
+					</LN0>
+					<LN inst="1" lnClass="LPHD" lnType="TH_LPHD" desc="2#直流屏"/>
+					<LN inst="1" lnClass="ZBAT" lnType="TH_btgZBAT" desc="2#直流屏蓄电池组测量">
+						<DOI name="NamPlt" desc="2#直流屏铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="2#直流屏蓄电池组电压">
+							<DAI name="dU">
+								<Val>2#直流屏蓄电池组电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="2#直流屏蓄电池组放电电流">
+							<DAI name="dU">
+								<Val>2#直流屏蓄电池组放电电流</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="1" lnClass="MMXU" lnType="TH_aciMMXU_ACDC" desc="2#直流屏1#交流进线测量">
+						<DOI name="NamPlt" desc="2#直流屏1#交流进线铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏1#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PPV" desc="2#直流屏1#交流进线相电压">
+							<DAI name="dU">
+								<Val>2#直流屏1#交流进线相电压</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="2" lnClass="MMXU" lnType="TH_aciMMXU_ACDC" desc="2#直流屏2#交流进线测量">
+						<DOI name="NamPlt" desc="2#直流屏2#交流进线铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏2#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PPV" desc="2#直流屏2#交流进线相电压">
+							<DAI name="dU">
+								<Val>2#直流屏2#交流进线相电压</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="1" lnClass="GGIO" lnType="TH_gswGGIO_aci" desc="2#直流屏1#交流进线状态">
+						<DOI name="NamPlt" desc="2#直流屏1#交流进线铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏1#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="2#直流屏1#交流进线异常">
+							<DAI name="dU">
+								<Val>2#直流屏1#交流进线异常</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="2" lnClass="GGIO" lnType="TH_gswGGIO_aci" desc="2#直流屏2#交流进线状态">
+						<DOI name="NamPlt" desc="2#直流屏2#交流进线铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏2#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="2#直流屏2#交流进线异常">
+							<DAI name="dU">
+								<Val>2#直流屏2#交流进线异常</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="3" lnClass="GGIO" lnType="TH_dbmGGIO" desc="2#直流屏母线测量">
+						<DOI name="NamPlt" desc="2#直流屏铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="2#直流屏控母电压">
+							<DAI name="dU">
+								<Val>2#直流屏控母电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="2#直流屏负载电流">
+							<DAI name="dU">
+								<Val>2#直流屏负载电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn3" desc="2#直流屏母线正对地电压">
+							<DAI name="dU">
+								<Val>2#直流屏母线正对地电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn4" desc="2#直流屏母线负对地电压">
+							<DAI name="dU">
+								<Val>2#直流屏母线负对地电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn5" desc="2#直流屏母线正对地绝缘电阻">
+							<DAI name="dU">
+								<Val>2#直流屏母线正对地绝缘电阻</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn6" desc="2#直流屏母线负对地绝缘电阻">
+							<DAI name="dU">
+								<Val>2#直流屏母线负对地绝缘电阻</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn7" desc="2#直流屏交流串入电压">
+							<DAI name="dU">
+								<Val>2#直流屏交流串入电压</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="4" lnClass="GGIO" lnType="TH_aciGGIO_ac" desc="2#直流屏交流母线状态">
+						<DOI name="NamPlt" desc="2#直流屏交流母线铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏交流母线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#直流屏交流母线异常">
+							<DAI name="dU">
+								<Val>2#直流屏交流母线异常</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="8" lnClass="GGIO" lnType="TH_fliwGGIO" desc="2#直流屏母线告警">
+						<DOI name="NamPlt" desc="2#直流屏铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm1" desc="2#直流屏母线绝缘告警">
+							<DAI name="dU">
+								<Val>2#直流屏母线绝缘告警</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm2" desc="2#直流屏母线绝缘预警">
+							<DAI name="dU">
+								<Val>2#直流屏母线绝缘预警</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm3" desc="2#直流屏母线绝缘压差故障">
+							<DAI name="dU">
+								<Val>2#直流屏母线绝缘压差故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm4" desc="2#直流屏母线交流串入故障">
+							<DAI name="dU">
+								<Val>2#直流屏母线交流串入故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm5" desc="2#直流屏单母线环网故障">
+							<DAI name="dU">
+								<Val>2#直流屏单母线环网故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm6" desc="2#直流屏双母线互窜故障">
+							<DAI name="dU">
+								<Val>2#直流屏双母线互窜故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm8" desc="2#直流屏母线过压">
+							<DAI name="dU">
+								<Val>2#直流屏母线过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm9" desc="2#直流屏母线欠压">
+							<DAI name="dU">
+								<Val>2#直流屏母线欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm10" desc="2#直流屏JY005G-4A主机内部通信故障">
+							<DAI name="dU">
+								<Val>2#直流屏JY005G-4A主机内部通信故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="9" lnClass="GGIO" lnType="TH_cheGGIO" desc="2#直流屏充电装置">
+						<DOI name="NamPlt" desc="2#直流屏充电装置铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏充电装置铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="2#直流屏充电装置输出电压">
+							<DAI name="dU">
+								<Val>2#直流屏充电装置输出电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="2#直流屏充电装置输出电流">
+							<DAI name="dU">
+								<Val>2#直流屏充电装置输出电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SPCSO1" desc="2#直流屏充电装置蓄电池组均浮充切换">
+							<DAI name="ctlModel">
+								<Val>1</Val>
+							</DAI>
+							<DAI name="dU">
+								<Val>2#直流屏充电装置蓄电池组均浮充切换</Val>
+							</DAI>
+						</DOI>
+						<DOI name="SPCSO2" desc="2#直流屏充电装置蓄电池组带载放电测试">
+							<DAI name="ctlModel">
+								<Val>1</Val>
+							</DAI>
+							<DAI name="dU">
+								<Val>2#直流屏充电装置蓄电池组带载放电测试</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="32" lnClass="GGIO" lnType="TH_almdcGGIO" desc="2#直流屏蓄电池组状态">
+						<DOI name="NamPlt" desc="2#直流屏铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="2#直流屏电池组过压">
+							<DAI name="dU">
+								<Val>2#直流屏电池组过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="2#直流屏电池组欠压">
+							<DAI name="dU">
+								<Val>2#直流屏电池组欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn3" desc="2#直流屏电池组过温">
+							<DAI name="dU">
+								<Val>2#直流屏电池组过温</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn4" desc="2#直流屏电池组故障">
+							<DAI name="dU">
+								<Val>2#直流屏电池组故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="35" lnClass="GGIO" lnType="TH_almGGIO_zl" desc="2#直流屏底层模块通讯故障">
+						<DOI name="NamPlt" desc="2#直流屏铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#直流屏主机内部通信故障">
+							<DAI name="dU">
+								<Val>2#直流屏主机内部通信故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="2#直流屏1#电池巡检通信故障">
+							<DAI name="dU">
+								<Val>2#直流屏1#电池巡检通信故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="2#直流屏2#电池巡检通信故障">
+							<DAI name="dU">
+								<Val>2#直流屏2#电池巡检通信故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="40" lnClass="GGIO" lnType="TH_gswGGIO_32" desc="2#直流屏主机开关量">
+						<DOI name="NamPlt" desc="2#直流屏主机开关量铭牌">
+							<DAI name="dU">
+								<Val>2#直流屏主机开关量铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#直流屏主机开关量1#状态量">
+							<DAI name="dU">
+								<Val>2#直流屏避雷器开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="2#直流屏主机开关量2#状态量">
+							<DAI name="dU">
+								<Val>2#直流屏避雷器故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="2#直流屏主机开关量3#状态量">
+							<DAI name="dU">
+								<Val>2#直流屏投母线开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="2#直流屏主机开关量4#状态量">
+							<DAI name="dU">
+								<Val>2#直流屏投电池开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="2#直流屏主机开关量5#状态量">
+							<DAI name="dU">
+								<Val>2#直流屏电池开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind6" desc="2#直流屏主机开关量6#状态量">
+							<DAI name="dU">
+								<Val>2#直流屏蓄电池总熔丝故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="ACPS01" desc="1#交流电源">
+					<LN0 inst="" lnClass="LLN0" lnType="TH_LLN0">
+						<DataSet name="ACPS0101DsAin" desc="测量值数据集(进线、母线)">
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="1" doName="Hz" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="1" doName="PhV" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="1" doName="A" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="1" doName="W" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="1" doName="Var" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="1" doName="PF" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="1" doName="Wh" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="2" doName="Hz" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="2" doName="PhV" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="2" doName="A" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="2" doName="W" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="2" doName="Var" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="2" doName="PF" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="2" doName="Wh" fc="MX"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="3" doName="PhV" fc="MX"/>
+						</DataSet>
+						<DataSet name="ACPS0101DsDin" desc="状态信息数据集(进线、母线告警，通讯故障、主机开关量)">
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="3" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="3" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="3" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="MMXU" lnInst="3" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="1" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="1" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="1" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="1" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="1" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="2" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="2" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="2" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="2" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="2" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="3" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="3" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="3" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="3" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="3" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="3" doName="Ind6" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="3" doName="Ind7" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="4" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="4" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="4" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="4" doName="Ind6" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="4" doName="Ind7" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="4" doName="Ind8" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="9" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS01" lnClass="GGIO" lnInst="9" doName="Ind2" fc="ST"/>
+						</DataSet>
+						<ReportControl name="ACPS0101UrcbAinRCB" desc="测量值数据集报告控制块" datSet="ACPS0101DsAin" intgPd="1000" rptID="ACPS01/LLN0$RP$ACPS0101UrcbAin" confRev="1" buffered="false">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<ReportControl name="ACPS0101BrcbDinRCB" desc="状态信息数据集报告控制块(进线、母线告警，通讯故障，主机开关量)" datSet="ACPS0101DsDin" intgPd="1000" rptID="ACPS01/LLN0$BR$ACPS0101BrcbDin" confRev="1" buffered="false" bufTime="0">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<GSEControl appID="YTHDYACPS01/LLN0.gcbACPS01Ain" confRev="2" datSet="ACPS0101DsAin" name="gcbACPS01Ain" type="GOOSE"/>
+						<GSEControl appID="YTHDYACPS01/LLN0.gcbACPS01Din" confRev="2" datSet="ACPS0101DsDin" name="gcbACPS01Din" type="GOOSE"/>
+					</LN0>
+					<LN inst="1" lnClass="LPHD" lnType="TH_LPHD" desc="1#交流屏"/>
+					<LN inst="1" lnClass="MMXU" lnType="TH_aciMMXU" desc="1#交流屏1#交流进线测量">
+						<DOI name="NamPlt" desc="1#交流屏1#交流进线铭牌">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Hz" desc="1#交流屏1#交流进线频率">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PhV" desc="1#交流屏1#交流进线相电压">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线相电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="A" desc="1#交流屏1#交流进线相电流">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线相电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="W" desc="1#交流屏1#交流进线单相有功功率P">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线单相有功功率P</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Var" desc="1#交流屏1#交流进线单相无功功率Q">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线单相无功功率Q</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PF" desc="1#交流屏1#交流进线单相功率因数">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线单相功率因数</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Wh" desc="1#交流屏1#交流进线单相有功电能">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线单相有功电能</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="2" lnClass="MMXU" lnType="TH_aciMMXU" desc="1#交流屏2#交流进线测量">
+						<DOI name="NamPlt" desc="1#交流屏2#交流进线铭牌">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Hz" desc="1#交流屏2#交流进线频率">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PhV" desc="1#交流屏2#交流进线相电压">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线相电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="A" desc="1#交流屏2#交流进线相电流">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线相电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="W" desc="1#交流屏2#交流进线单相有功功率P">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线单相有功功率P</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Var" desc="1#交流屏2#交流进线单相无功功率Q">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线单相无功功率Q</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PF" desc="1#交流屏2#交流进线单相功率因数">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线单相功率因数</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Wh" desc="1#交流屏2#交流进线单相有功电能">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线单相有功电能</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="3" lnClass="MMXU" lnType="TH_acbMMXU" desc="1#交流屏交流母线测量">
+						<DOI name="NamPlt" desc="1#交流屏交流母线铭牌">
+							<DAI name="dU">
+								<Val>1#交流屏交流母线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PhV" desc="1#交流屏交流母线相电压">
+							<DAI name="dU">
+								<Val>1#交流屏交流母线相电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#交流屏交流母线失电">
+							<DAI name="dU">
+								<Val>1#交流屏交流母线失电</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="1#交流屏交流母线缺相">
+							<DAI name="dU">
+								<Val>1#交流屏交流母线缺相</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="1#交流屏交流母线欠压">
+							<DAI name="dU">
+								<Val>1#交流屏交流母线欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="1#交流屏交流母线过压">
+							<DAI name="dU">
+								<Val>1#交流屏交流母线过压</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="1" lnClass="GGIO" lnType="TH_aciGGIO" desc="1#交流屏1#交流进线状态">
+						<DOI name="NamPlt" desc="1#交流屏1#交流进线铭牌">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#交流屏1#交流进线过压">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="1#交流屏1#交流进线欠压">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="1#交流屏1#交流进线缺相">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线缺相</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="1#交流屏1#交流进线失电">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线失电</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="1#交流屏1#交流进线投切状态">
+							<DAI name="dU">
+								<Val>1#交流屏1#交流进线投切状态</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="2" lnClass="GGIO" lnType="TH_aciGGIO" desc="1#交流屏2#交流进线状态">
+						<DOI name="NamPlt" desc="1#交流屏2#交流进线铭牌">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#交流屏2#交流进线过压">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="1#交流屏2#交流进线欠压">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="1#交流屏2#交流进线缺相">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线缺相</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="1#交流屏2#交流进线失电">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线失电</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="1#交流屏2#交流进线投切状态">
+							<DAI name="dU">
+								<Val>1#交流屏2#交流进线投切状态</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="3" lnClass="GGIO" lnType="TH_almacGGIO" desc="1#交流屏告警">
+						<DOI name="NamPlt" desc="1#交流屏铭牌">
+							<DAI name="dU">
+								<Val>1#交流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#交流屏母联开关状态">
+							<DAI name="dU">
+								<Val>1#交流屏母联开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="1#交流屏内部通信故障">
+							<DAI name="dU">
+								<Val>1#交流屏内部通信故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="1#交流屏一路进线跳闸">
+							<DAI name="dU">
+								<Val>1#交流屏一路进线跳闸</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="1#交流屏二路进线跳闸">
+							<DAI name="dU">
+								<Val>1#交流屏二路进线跳闸</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="1#交流屏ATS一路工作状态">
+							<DAI name="dU">
+								<Val>1#交流屏ATS一路工作状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind6" desc="1#交流屏ATS二路工作状态">
+							<DAI name="dU">
+								<Val>1#交流屏ATS二路工作状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind7" desc="1#交流屏开关量输入总告警">
+							<DAI name="dU">
+								<Val>1#交流屏开关量输入总告警</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="4" lnClass="GGIO" lnType="TH_almGGIO_ac" desc="1#交流屏模块通讯故障">
+						<DOI name="NamPlt" desc="1#交流屏铭牌">
+							<DAI name="dU">
+								<Val>1#交流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#交流屏1#UPS通讯故障">
+							<DAI name="dU">
+								<Val>1#交流屏1#UPS通讯故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="1#交流屏1#INV通讯故障">
+							<DAI name="dU">
+								<Val>1#交流屏1#INV通讯故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="1#交流屏ATS通讯故障">
+							<DAI name="dU">
+								<Val>1#交流屏ATS通讯故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind6" desc="1#交流屏1#KGL通信故障0#进线屏">
+							<DAI name="dU">
+								<Val>1#交流屏1#KGL通信故障0#进线屏</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind7" desc="1#交流屏2#KGL通信故障1#馈线屏">
+							<DAI name="dU">
+								<Val>1#交流屏2#KGL通信故障1#馈线屏</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind8" desc="1#交流屏3#KGL通信故障2#馈线屏">
+							<DAI name="dU">
+								<Val>1#交流屏3#KGL通信故障2#馈线屏</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="9" lnClass="GGIO" lnType="TH_gswGGIO_32" desc="1#交流屏主机开关量">
+						<DOI name="NamPlt" desc="1#交流屏主机开关量铭牌">
+							<DAI name="dU">
+								<Val>1#交流屏主机开关量铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#交流屏主机开关量1#状态量">
+							<DAI name="dU">
+								<Val>1#交流屏避雷器开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="1#交流屏主机开关量2#状态量">
+							<DAI name="dU">
+								<Val>1#交流屏避雷器故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="ACPS02" desc="2#交流电源">
+					<LN0 inst="" lnClass="LLN0" lnType="TH_LLN0">
+						<DataSet name="ACPS0201DsAin" desc="测量值数据集(进线、母线)">
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="1" doName="Hz" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="1" doName="PhV" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="1" doName="A" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="1" doName="W" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="1" doName="Var" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="1" doName="PF" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="1" doName="Wh" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="2" doName="Hz" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="2" doName="PhV" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="2" doName="A" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="2" doName="W" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="2" doName="Var" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="2" doName="PF" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="2" doName="Wh" fc="MX"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="3" doName="PhV" fc="MX"/>
+						</DataSet>
+						<DataSet name="ACPS0201DsDin" desc="状态值数据集(进线、母线告警，通讯故障，主机开关量)">
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="3" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="3" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="3" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="MMXU" lnInst="3" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="1" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="1" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="1" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="1" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="1" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="2" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="2" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="2" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="2" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="2" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="3" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="3" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="3" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="3" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="3" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="3" doName="Ind6" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="3" doName="Ind7" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="4" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="4" doName="Ind5" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="4" doName="Ind6" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="4" doName="Ind7" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="9" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="ACPS02" lnClass="GGIO" lnInst="9" doName="Ind2" fc="ST"/>
+						</DataSet>
+						<ReportControl name="ACPS0201UrcbAinRCB" desc="测量值数据集报告控制块(进线、母线)" datSet="ACPS0201DsAin" intgPd="1000" rptID="ACPS02/LLN0$RP$ACPS0201UrcbAin" confRev="1" buffered="false">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<ReportControl name="ACPS0201UrcbDinRCB" desc="状态值数据集报告控制块(进线、母线告警，通讯故障，主机开关量)" datSet="ACPS0201DsDin" intgPd="1000" rptID="ACPS02/LLN0$BR$ACPS0201UrcbDin" confRev="1" buffered="false" bufTime="0">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<GSEControl appID="YTHDYACPS02/LLN0.gcbACPS02Ain" confRev="2" datSet="ACPS0201DsAin" name="gcbACPS02Ain" type="GOOSE"/>
+						<GSEControl appID="YTHDYACPS02/LLN0.gcbACPS02Din" confRev="2" datSet="ACPS0201DsDin" name="gcbACPS02Din" type="GOOSE"/>
+					</LN0>
+					<LN inst="1" lnClass="LPHD" lnType="TH_LPHD" desc="2#交流屏"/>
+					<LN inst="1" lnClass="MMXU" lnType="TH_aciMMXU" desc="2#交流屏1#交流进线测量">
+						<DOI name="NamPlt" desc="2#交流屏1#交流进线铭牌">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Hz" desc="2#交流屏1#交流进线频率">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PhV" desc="2#交流屏1#交流进线相电压">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线相电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="A" desc="2#交流屏1#交流进线相电流">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线相电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="W" desc="2#交流屏1#交流进线单相有功功率P">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线单相有功功率P</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Var" desc="2#交流屏1#交流进线单相无功功率Q">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线单相无功功率Q</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PF" desc="2#交流屏1#交流进线单相功率因数">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线单相功率因数</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Wh" desc="2#交流屏1#交流进线单相有功电能">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线单相有功电能</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="2" lnClass="MMXU" lnType="TH_aciMMXU" desc="2#交流屏2#交流进线测量">
+						<DOI name="NamPlt" desc="2#交流屏2#交流进线铭牌">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Hz" desc="2#交流屏2#交流进线频率">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PhV" desc="2#交流屏2#交流进线相电压">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线相电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="A" desc="2#交流屏2#交流进线相电流">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线相电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="W" desc="2#交流屏2#交流进线单相有功功率P">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线单相有功功率P</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Var" desc="2#交流屏2#交流进线单相无功功率Q">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线单相无功功率Q</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PF" desc="2#交流屏2#交流进线单相功率因数">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线单相功率因数</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Wh" desc="2#交流屏2#交流进线单相有功电能">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线单相有功电能</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="3" lnClass="MMXU" lnType="TH_acbMMXU" desc="2#交流屏交流母线测量">
+						<DOI name="NamPlt" desc="2#交流屏母线铭牌">
+							<DAI name="dU">
+								<Val>2#交流屏母线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="PhV" desc="2#交流屏母线相电压">
+							<DAI name="dU">
+								<Val>2#交流屏母线相电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#交流屏母线失电">
+							<DAI name="dU">
+								<Val>2#交流屏母线失电</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="2#交流屏母线缺相">
+							<DAI name="dU">
+								<Val>2#交流屏母线缺相</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="2#交流屏母线欠压">
+							<DAI name="dU">
+								<Val>2#交流屏母线欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="2#交流屏母线过压">
+							<DAI name="dU">
+								<Val>2#交流屏母线过压</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="1" lnClass="GGIO" lnType="TH_aciGGIO" desc="2#交流屏1#交流进线状态">
+						<DOI name="NamPlt" desc="2#交流屏1#交流进线铭牌">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#交流屏1#交流进线过压">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="2#交流屏1#交流进线欠压">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="2#交流屏1#交流进线缺相">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线缺相</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="2#交流屏1#交流进线失电">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线失电</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="2#交流屏1#交流进线投切状态">
+							<DAI name="dU">
+								<Val>2#交流屏1#交流进线投切状态</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="2" lnClass="GGIO" lnType="TH_aciGGIO" desc="2#交流屏2#交流进线状态">
+						<DOI name="NamPlt" desc="2#交流屏2#交流进线铭牌">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#交流屏2#交流进线过压">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="2#交流屏2#交流进线欠压">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="2#交流屏2#交流进线缺相">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线缺相</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="2#交流屏2#交流进线失电">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线失电</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="2#交流屏2#交流进线投切状态">
+							<DAI name="dU">
+								<Val>2#交流屏2#交流进线投切状态</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="3" lnClass="GGIO" lnType="TH_almacGGIO" desc="2#交流屏告警">
+						<DOI name="NamPlt" desc="2#交流屏铭牌">
+							<DAI name="dU">
+								<Val>2#交流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#交流屏母联开关状态">
+							<DAI name="dU">
+								<Val>2#交流屏母联开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="2#交流屏内部通信故障">
+							<DAI name="dU">
+								<Val>2#交流屏内部通信故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="2#交流屏一路进线跳闸">
+							<DAI name="dU">
+								<Val>2#交流屏一路进线跳闸</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="2#交流屏二路进线跳闸">
+							<DAI name="dU">
+								<Val>2#交流屏二路进线跳闸</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="2#交流屏ATS一路工作状态">
+							<DAI name="dU">
+								<Val>2#交流屏ATS一路工作状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind6" desc="2#交流屏ATS二路工作状态">
+							<DAI name="dU">
+								<Val>2#交流屏ATS二路工作状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind7" desc="2#交流屏开关量输入总告警">
+							<DAI name="dU">
+								<Val>2#交流屏开关量输入总告警</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="4" lnClass="GGIO" lnType="TH_almGGIO_ac" desc="2#交流屏模块通讯故障">
+						<DOI name="NamPlt" desc="2#交流屏铭牌">
+							<DAI name="dU">
+								<Val>2#交流屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#交流屏1#UPS通讯故障">
+							<DAI name="dU">
+								<Val>2#交流屏1#UPS通讯故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="2#交流屏ATS通讯故障">
+							<DAI name="dU">
+								<Val>2#交流屏ATS通讯故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind6" desc="2#交流屏1#KGL通信故障1#馈线屏">
+							<DAI name="dU">
+								<Val>2#交流屏1#KGL通信故障1#馈线屏</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind7" desc="2#交流屏2#KGL通信故障2#馈线屏">
+							<DAI name="dU">
+								<Val>2#交流屏2#KGL通信故障2#馈线屏</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="9" lnClass="GGIO" lnType="TH_gswGGIO_32" desc="2#交流屏主机开关量">
+						<DOI name="NamPlt" desc="2#交流屏主机开关量铭牌">
+							<DAI name="dU">
+								<Val>2#交流屏主机开关量铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#交流屏主机开关量1#状态量">
+							<DAI name="dU">
+								<Val>2#交流屏避雷器开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="2#交流屏主机开关量2#状态量">
+							<DAI name="dU">
+								<Val>2#交流屏避雷器故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="MNTR" desc="总监控器">
+					<LN0 inst="" lnClass="LLN0" lnType="TH_LLN0">
+						<DataSet name="MNTRDsDin" desc="状态信息数据集">
+							<FCDA ldInst="MNTR" lnClass="GGIO" lnInst="1" doName="Alm1" fc="ST"/>
+							<FCDA ldInst="MNTR" lnClass="GGIO" lnInst="1" doName="Alm2" fc="ST"/>
+							<FCDA ldInst="MNTR" lnClass="GGIO" lnInst="1" doName="Alm3" fc="ST"/>
+							<FCDA ldInst="MNTR" lnClass="GGIO" lnInst="1" doName="Alm4" fc="ST"/>
+							<FCDA ldInst="MNTR" lnClass="GGIO" lnInst="1" doName="Alm5" fc="ST"/>
+							<FCDA ldInst="MNTR" lnClass="GGIO" lnInst="1" doName="Alm6" fc="ST"/>
+							<FCDA ldInst="MNTR" lnClass="GGIO" lnInst="1" doName="Alm7" fc="ST"/>
+							<FCDA ldInst="MNTR" lnClass="GGIO" lnInst="1" doName="Alm8" fc="ST"/>
+							<FCDA ldInst="MNTR" lnClass="GGIO" lnInst="1" doName="Alm9" fc="ST"/>
+						</DataSet>
+						<ReportControl name="MNRTBrcbDinRCB" desc="状态信息数据集报告控制块" datSet="MNTRDsDin" intgPd="1000" rptID="MNTR/LLN0$BR$MNRTBrcbDin" confRev="1" buffered="false" bufTime="50">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<GSEControl appID="YTHDYMNTR/LLN0.gcbMNTRDin" confRev="2" datSet="MNTRDsDin" name="gcbMNTRDin" type="GOOSE"/>
+					</LN0>
+					<LN inst="1" lnClass="LPHD" lnType="TH_LPHD" desc="系统总监控"/>
+					<LN inst="1" lnClass="GGIO" lnType="TH_almGGIO" desc="系统总告警">
+						<DOI name="NamPlt" desc="总告警铭牌">
+							<DAI name="dU">
+								<Val>总告警铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm1" desc="总告警综合故障">
+							<DAI name="stVal"/>
+							<DAI name="q"/>
+							<DAI name="t"/>
+							<DAI name="dU">
+								<Val>总告警综合故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm2" desc="总告警1#交流监控通讯异常">
+							<DAI name="stVal"/>
+							<DAI name="q"/>
+							<DAI name="t"/>
+							<DAI name="dU">
+								<Val>总告警1#交流监控通讯异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm3" desc="总告警2#交流监控通讯异常">
+							<DAI name="stVal"/>
+							<DAI name="q"/>
+							<DAI name="t"/>
+							<DAI name="dU">
+								<Val>总告警2#交流监控通讯异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm4" desc="总告警1#直流监控通讯异常">
+							<DAI name="stVal"/>
+							<DAI name="q"/>
+							<DAI name="t"/>
+							<DAI name="dU">
+								<Val>总告警1#直流监控通讯异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm5" desc="总告警2#直流监控通讯异常">
+							<DAI name="stVal"/>
+							<DAI name="q"/>
+							<DAI name="t"/>
+							<DAI name="dU">
+								<Val>总告警2#直流监控通讯异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm6" desc="总告警1#通信电源监控通讯异常">
+							<DAI name="stVal"/>
+							<DAI name="q"/>
+							<DAI name="t"/>
+							<DAI name="dU">
+								<Val>总告警1#通信电源监控通讯异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm7" desc="总告警2#通信电源监控通讯异常">
+							<DAI name="stVal"/>
+							<DAI name="q"/>
+							<DAI name="t"/>
+							<DAI name="dU">
+								<Val>总告警2#通信电源监控通讯异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm8" desc="总告警1#绝缘监控通讯异常">
+							<DAI name="stVal"/>
+							<DAI name="q"/>
+							<DAI name="t"/>
+							<DAI name="dU">
+								<Val>总告警1#绝缘监控通讯异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Alm9" desc="总告警2#绝缘监控通讯异常">
+							<DAI name="stVal"/>
+							<DAI name="q"/>
+							<DAI name="t"/>
+							<DAI name="dU">
+								<Val>总告警2#绝缘监控通讯异常</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="UPSS01" desc="1#UPS电源屏">
+					<LN0 inst="" lnClass="LLN0" lnType="TH_LLN0" desc="1#UPS电源屏">
+						<DataSet name="UPSS01DsAin" desc="测量值数据集(UPS、INV)">
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="AnIn2" fc="MX"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="AnIn3" fc="MX"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="AnIn4" fc="MX"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="AnIn5" fc="MX"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="AnIn6" fc="MX"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="AnIn7" fc="MX"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="AnIn8" fc="MX"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="AnIn9" fc="MX"/>
+						</DataSet>
+						<DataSet name="UPSS01DsDin" desc="状态值数据集(UPS、INV)">
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="UPSS01" lnClass="GGIO" lnInst="1" doName="Ind5" fc="ST"/>
+						</DataSet>
+						<ReportControl name="UPSS01UrcbAinRCB" desc="测量值数据集(UPS、INV)" datSet="UPSS01DsAin" intgPd="1000" rptID="UPSS01/LLN0$RP$UPSS01UrcbAin" confRev="1" buffered="false">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<ReportControl name="UPSS01UrcbDinRCB" desc="状态值数据集(UPS、INV)" datSet="UPSS01DsDin" intgPd="1000" rptID="UPSS01/LLN0$BR$UPSS01UrcbDin" confRev="1" buffered="false" bufTime="0">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<GSEControl appID="YTHDYUPSS01/LLN0.gcbUPSS01Ain" confRev="2" datSet="UPSS01DsAin" name="gcbUPSS01Ain" type="GOOSE"/>
+						<GSEControl appID="YTHDYUPSS01/LLN0.gcbUPSS01Din" confRev="2" datSet="UPSS01DsDin" name="gcbUPSS01Din" type="GOOSE"/>
+					</LN0>
+					<LN inst="1" lnClass="LPHD" lnType="TH_LPHD"/>
+					<LN inst="1" lnClass="GGIO" lnType="TH_umdGGIO_380" desc="1#UPS电源屏1#UPS模块">
+						<DOI name="NamPlt" desc="1#UPS电源模块铭牌">
+							<DAI name="dU">
+								<Val>1#UPS电源模块铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="1#UPS电源模块交流输入电压">
+							<DAI name="dU">
+								<Val>1#UPS电源模块交流输入电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="1#UPS电源模块交流输入频率">
+							<DAI name="dU">
+								<Val>1#UPS电源模块交流输入频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn3" desc="1#UPS电源模块旁路输入电压">
+							<DAI name="dU">
+								<Val>1#UPS电源模块旁路输入电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn4" desc="1#UPS电源模块旁路输入频率">
+							<DAI name="dU">
+								<Val>1#UPS电源模块旁路输入频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn5" desc="1#UPS电源模块直流输入电压">
+							<DAI name="dU">
+								<Val>1#UPS电源模块直流输入电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn6" desc="1#UPS电源模块输出电压">
+							<DAI name="dU">
+								<Val>1#UPS电源模块输出电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn7" desc="1#UPS电源模块输出电流">
+							<DAI name="dU">
+								<Val>1#UPS电源模块输出电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn8" desc="1#UPS电源模块输出频率">
+							<DAI name="dU">
+								<Val>1#UPS电源模块输出频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn9" desc="1#UPS电源模块温度">
+							<DAI name="dU">
+								<Val>1#UPS电源模块温度</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#UPS电源模块交流输入异常">
+							<DAI name="dU">
+								<Val>1#UPS电源模块交流输入异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="1#UPS电源模块直流输入异常">
+							<DAI name="dU">
+								<Val>1#UPS电源模块直流输入异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="1#UPS电源模块交流输出异常">
+							<DAI name="dU">
+								<Val>1#UPS电源模块交流输出异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="1#UPS电源模块过载">
+							<DAI name="dU">
+								<Val>1#UPS电源模块过载</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="1#UPS电源模块旁路输入异常">
+							<DAI name="dU">
+								<Val>1#UPS电源模块旁路输入异常</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="UPSS02" desc="2#UPS电源屏">
+					<LN0 inst="" lnClass="LLN0" lnType="TH_LLN0">
+						<DataSet name="UPSS02DsAin" desc="测量值数据集(UPS、INV)">
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="AnIn2" fc="MX"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="AnIn3" fc="MX"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="AnIn4" fc="MX"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="AnIn5" fc="MX"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="AnIn6" fc="MX"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="AnIn7" fc="MX"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="AnIn8" fc="MX"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="AnIn9" fc="MX"/>
+						</DataSet>
+						<DataSet name="UPSS02DsDin" desc="状态值数据集(UPS、INV)">
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="Ind3" fc="ST"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="Ind4" fc="ST"/>
+							<FCDA ldInst="UPSS02" lnClass="GGIO" lnInst="1" doName="Ind5" fc="ST"/>
+						</DataSet>
+						<ReportControl name="UPSS02UrcbAinRCB" desc="测量信息数据集报告控制块(UPS、INV)" datSet="UPSS02DsAin" intgPd="1000" rptID="UPSS02/LLN0$RP$UPSS02UrcbAin" confRev="1" buffered="false">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<ReportControl name="UPSS02UrcbDinRCB" desc="状态信息数据集报告控制块(UPS、INV)" datSet="UPSS02DsDin" intgPd="1000" rptID="UPSS02/LLN0$BR$UPSS02UrcbDin" confRev="1" buffered="false" bufTime="0">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<GSEControl appID="YTHDYUPSS02/LLN0.gcbUPSS02Ain" confRev="2" datSet="UPSS02DsAin" name="gcbUPSS02Ain" type="GOOSE"/>
+						<GSEControl appID="YTHDYUPSS02/LLN0.gcbUPSS02Din" confRev="2" datSet="UPSS02DsDin" name="gcbUPSS02Din" type="GOOSE"/>
+					</LN0>
+					<LN inst="1" lnClass="LPHD" lnType="TH_LPHD" desc="2#UPS电源屏"/>
+					<LN inst="1" lnClass="GGIO" lnType="TH_umdGGIO_380" desc="2#UPS电源屏1#UPS模块">
+						<DOI name="NamPlt" desc="2#UPS电源屏1#UPS模块铭牌">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="2#UPS电源屏1#UPS模块交流输入电压">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块交流输入电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="2#UPS电源屏1#UPS模块交流输入频率">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块交流输入频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn3" desc="2#UPS电源屏1#UPS模块旁路输入电压">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块旁路输入电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn4" desc="2#UPS电源屏1#UPS模块旁路输入频率">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块旁路输入频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn5" desc="2#UPS电源屏1#UPS模块直流输入电压">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块直流输入电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn6" desc="2#UPS电源屏1#UPS模块输出电压">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块输出电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn7" desc="2#UPS电源屏1#UPS模块输出电流">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块输出电流</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn8" desc="2#UPS电源屏1#UPS模块输出频率">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块输出频率</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn9" desc="2#UPS电源屏1#UPS模块温度">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块温度</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#UPS电源屏1#UPS模块交流输入异常">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块交流输入异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="2#UPS电源屏1#UPS模块直流输入异常">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块直流输入异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="2#UPS电源屏1#UPS模块交流输出异常">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块交流输出异常</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind4" desc="2#UPS电源屏1#UPS模块过载">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块过载</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind5" desc="2#UPS电源屏1#UPS模块旁路输入异常">
+							<DAI name="dU">
+								<Val>2#UPS电源屏1#UPS模块旁路输入异常</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="CPSS01" desc="1#通信电源屏">
+					<LN0 inst="" lnClass="LLN0" lnType="TH_LLN0">
+						<DataSet name="CPSS01DsAin" desc="测量值数据集">
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="3" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="3" doName="AnIn2" fc="MX"/>
+						</DataSet>
+						<DataSet name="CPSS01DsDin" desc="状态值数据集">
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="1" doName="AnIn1" fc="ST"/>
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="1" doName="AnIn2" fc="ST"/>
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="1" doName="AnIn3" fc="ST"/>
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="1" doName="AnIn4" fc="ST"/>
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="1" doName="AnIn5" fc="ST"/>
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="4" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="4" doName="Ind2" fc="ST"/>
+							<FCDA ldInst="CPSS01" lnClass="GGIO" lnInst="4" doName="Ind3" fc="ST"/>
+						</DataSet>
+						<ReportControl name="CPSS01UrcbAinRCB" desc="测量值信息数据集报告控制块" datSet="CPSS01DsAin" intgPd="1000" rptID="CPSS01/LLN0$RP$CPSS01UrcbAin" confRev="1" buffered="false">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<ReportControl name="CPSS01UrcbDinRCB" desc="状态值信息数据集报告控制块" datSet="CPSS01DsDin" intgPd="1000" rptID="CPSS01/LLN0$BR$CPSS01UrcbDin" confRev="1" buffered="false" bufTime="0">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<GSEControl appID="YTHDYCPSS01/LLN0.gcbCPSS01Ain" confRev="2" datSet="CPSS01DsAin" name="gcbCPSS01Ain" type="GOOSE"/>
+						<GSEControl appID="YTHDYCPSS01/LLN0.gcbCPSS01Din" confRev="2" datSet="CPSS01DsDin" name="gcbCPSS01Din" type="GOOSE"/>
+					</LN0>
+					<LN inst="1" lnClass="LPHD" lnType="TH_LPHD" desc="1#通信电源屏"/>
+					<LN inst="1" lnClass="GGIO" lnType="TH_almGGIO_TX" desc="1#通信屏告警">
+						<DOI name="NamPlt" desc="1#通信屏铭牌">
+							<DAI name="dU">
+								<Val>1#通信屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="1#通信屏直流输入过压">
+							<DAI name="dU">
+								<Val>1#通信屏直流输入过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="1#通信屏直流输入欠压">
+							<DAI name="dU">
+								<Val>1#通信屏直流输入欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn3" desc="1#通信屏直流输出过压">
+							<DAI name="dU">
+								<Val>1#通信屏直流输出过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn4" desc="1#通信屏直流输出欠压">
+							<DAI name="dU">
+								<Val>1#通信屏直流输出欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn5" desc="2#通信屏输出故障">
+							<DAI name="dU">
+								<Val>1#通信屏输出故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="3" lnClass="GGIO" lnType="TH_cmsGGIO_mod" desc="1#通信屏通信模块测量">
+						<DOI name="NamPlt" desc="1#通信屏通信模块铭牌">
+							<DAI name="dU">
+								<Val>1#通信屏通信模块铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="1#通信屏通信模块输出电压">
+							<DAI name="dU">
+								<Val>1#通信屏通信模块输出电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="1#通信屏通信模块输出总电流">
+							<DAI name="dU">
+								<Val>1#通信屏通信模块输出总电流</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="4" lnClass="GGIO" lnType="TH_gswGGIO_32" desc="1#通信屏主机KGL">
+						<DOI name="NamPlt" desc="1#通信屏主机开关量铭牌">
+							<DAI name="dU">
+								<Val>1#通信屏主机开关量铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="1#通信屏主机开关量1#状态量">
+							<DAI name="dU">
+								<Val>1#通信屏馈出总开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="1#通信屏主机开关量2#状态量">
+							<DAI name="dU">
+								<Val>1#通信屏避雷器故障</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind3" desc="1#通信屏主机开关量3#状态量">
+							<DAI name="dU">
+								<Val>1#通信屏联络开关状态</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+				<LDevice inst="CPSS02" desc="2#通信电源屏">
+					<LN0 inst="" lnClass="LLN0" lnType="TH_LLN0">
+						<DataSet name="CPSS02DsAin" desc="测量值数据集">
+							<FCDA ldInst="CPSS02" lnClass="GGIO" lnInst="3" doName="AnIn1" fc="MX"/>
+							<FCDA ldInst="CPSS02" lnClass="GGIO" lnInst="3" doName="AnIn2" fc="MX"/>
+						</DataSet>
+						<DataSet name="CPSS02DsDin" desc="状态值数据集">
+							<FCDA ldInst="CPSS02" lnClass="GGIO" lnInst="1" doName="AnIn1" fc="ST"/>
+							<FCDA ldInst="CPSS02" lnClass="GGIO" lnInst="1" doName="AnIn2" fc="ST"/>
+							<FCDA ldInst="CPSS02" lnClass="GGIO" lnInst="1" doName="AnIn3" fc="ST"/>
+							<FCDA ldInst="CPSS02" lnClass="GGIO" lnInst="1" doName="AnIn4" fc="ST"/>
+							<FCDA ldInst="CPSS02" lnClass="GGIO" lnInst="1" doName="AnIn5" fc="ST"/>
+							<FCDA ldInst="CPSS02" lnClass="GGIO" lnInst="4" doName="Ind1" fc="ST"/>
+							<FCDA ldInst="CPSS02" lnClass="GGIO" lnInst="4" doName="Ind2" fc="ST"/>
+						</DataSet>
+						<ReportControl name="CPSS02UrcbAinRCB" desc="测量信息数据集报告控制块" datSet="CPSS02DsAin" intgPd="1000" rptID="CPSS02/LLN0$RP$CPSS02UrcbAin" confRev="1" buffered="false" bufTime="0">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<ReportControl name="CPSS02UrcbDinRCB" desc="状态信息数据集报告控制块" datSet="CPSS02DsDin" intgPd="1000" rptID="CPSS02/LLN0$BR$CPSS02UrcbDin" confRev="1" buffered="false" bufTime="0">
+							<TrgOps period="true"/>
+							<OptFields seqNum="true" timeStamp="true" dataSet="true" reasonCode="true" configRef="true"/>
+							<RptEnabled max="2"/>
+						</ReportControl>
+						<GSEControl appID="YTHDYCPSS02/LLN0.gcbCPSS02Ain" confRev="2" datSet="CPSS02DsAin" name="gcbCPSS02Ain" type="GOOSE"/>
+						<GSEControl appID="YTHDYCPSS02/LLN0.gcbCPSS02Din" confRev="2" datSet="CPSS02DsDin" name="gcbCPSS02Din" type="GOOSE"/>
+					</LN0>
+					<LN inst="1" lnClass="LPHD" lnType="TH_LPHD" desc="2#通信电源屏"/>
+					<LN inst="1" lnClass="GGIO" lnType="TH_almGGIO_TX" desc="2#通信屏告警">
+						<DOI name="NamPlt" desc="2#通信屏铭牌">
+							<DAI name="dU">
+								<Val>2#通信屏铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="2#通信屏直流输入过压">
+							<DAI name="dU">
+								<Val>2#通信屏直流输入过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="2#通信屏直流输入欠压">
+							<DAI name="dU">
+								<Val>2#通信屏直流输入欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn3" desc="2#通信屏直流输出过压">
+							<DAI name="dU">
+								<Val>2#通信屏直流输出过压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn4" desc="2#通信屏直流输出欠压">
+							<DAI name="dU">
+								<Val>2#通信屏直流输出欠压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn5" desc="2#通信屏输出故障">
+							<DAI name="dU">
+								<Val>2#通信屏输出故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="3" lnClass="GGIO" lnType="TH_cheGGIO_mod" desc="2#通信屏通信模块测量">
+						<DOI name="NamPlt" desc="2#通信屏通信模块铭牌">
+							<DAI name="dU">
+								<Val>2#通信屏通信模块铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn1" desc="2#通信屏通信模块输出电压">
+							<DAI name="dU">
+								<Val>2#通信屏通信模块输出电压</Val>
+							</DAI>
+						</DOI>
+						<DOI name="AnIn2" desc="2#通信屏通信模块输出总电流">
+							<DAI name="dU">
+								<Val>2#通信屏通信模块输出总电流</Val>
+							</DAI>
+						</DOI>
+					</LN>
+					<LN inst="4" lnClass="GGIO" lnType="TH_gswGGIO_32" desc="2#通信屏主机开关量">
+						<DOI name="NamPlt" desc="2#通信屏主机开关量铭牌">
+							<DAI name="dU">
+								<Val>1#通信屏主机开关量铭牌</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind1" desc="2#通信屏主机开关量1#状态量">
+							<DAI name="dU">
+								<Val>2#通信屏馈出总开关状态</Val>
+							</DAI>
+						</DOI>
+						<DOI name="Ind2" desc="2#通信屏主机开关量2#状态量">
+							<DAI name="dU">
+								<Val>2#通信屏避雷器故障</Val>
+							</DAI>
+						</DOI>
+					</LN>
+				</LDevice>
+			</Server>
+		</AccessPoint>
+	</IED>
+	<DataTypeTemplates>
+		<LNodeType id="TH_LLN0" lnClass="LLN0">
+			<DO desc="Mode" type="CN_INC_Mod" name="Mod"/>
+			<DO desc="Behaviour" type="CN_INS_Beh" name="Beh"/>
+			<DO desc="Health" type="CN_INS_Health" name="Health"/>
+			<DO desc="Name Plate" type="CN_LPL_LN0" name="NamPlt"/>
+		</LNodeType>
+		<LNodeType id="TH_aciGGIO_ac" desc="直流屏母线交流状态" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="健康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="Ind1" type="CN_SPS" desc="异常"/>
+			<DO name="Ind2" type="CN_SPS" desc="过压"/>
+			<DO name="Ind3" type="CN_SPS" desc="欠压"/>
+			<DO name="Ind4" type="CN_SPS" desc="缺相"/>
+			<DO name="Ind5" type="CN_SPS" desc="失电"/>
+		</LNodeType>
+		<LNodeType id="TH_LPHD" lnClass="LPHD" desc="">
+			<DO name="PhyNam" type="CN_DPL" desc="物理装置铭牌"/>
+			<DO name="PhyHealth" type="CN_INS_Health" desc="物理装置健康状况"/>
+			<DO name="Proxy" type="CN_SPS" desc="说明该逻辑节点是否为代理"/>
+		</LNodeType>
+		<LNodeType id="TH_aciMMXU" desc="交流屏交流进线测量" lnClass="MMXU">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="Hz" type="CN_MV_I16" desc="频率"/>
+			<DO name="PhV" type="CN_WYE_I16" desc="相电压"/>
+			<DO name="A" type="CN_WYE_I16" desc="相电流"/>
+			<DO name="W" type="CN_WYE" desc="单相有功功率P"/>
+			<DO name="Var" type="CN_WYE" desc="单相无功功率Q"/>
+			<DO name="PF" type="CN_WYE_I16" desc="单相功率因数"/>
+			<DO name="Wh" type="CN_WYE" desc="单相有功电能"/>
+		</LNodeType>
+		<LNodeType id="TH_aciGGIO" desc="交流屏交流进线状态" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="Ind1" type="CN_SPS" desc="过压"/>
+			<DO name="Ind2" type="CN_SPS" desc="欠压"/>
+			<DO name="Ind3" type="CN_SPS" desc="缺相"/>
+			<DO name="Ind4" type="CN_SPS" desc="失电"/>
+			<DO name="Ind5" type="CN_SPS" desc="投切状态"/>
+		</LNodeType>
+		<LNodeType id="TH_umdGGIO_380" desc="UPS模块(三相)" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="AnIn1" type="CN_WYE_I16" desc="交流输入电压"/>
+			<DO name="AnIn2" type="CN_MV_I16" desc="交流输入频率"/>
+			<DO name="AnIn3" type="CN_MV_I16" desc="旁路输入电压"/>
+			<DO name="AnIn4" type="CN_MV_I16" desc="旁路输入频率"/>
+			<DO name="AnIn5" type="CN_MV_I16" desc="直流输入电压"/>
+			<DO name="AnIn6" type="CN_MV_I16" desc="输出电压"/>
+			<DO name="AnIn7" type="CN_MV_I16" desc="输出电流"/>
+			<DO name="AnIn8" type="CN_MV_I16" desc="输出频率"/>
+			<DO name="AnIn9" type="CN_MV_I16" desc="温度"/>
+			<DO name="Ind1" type="CN_SPS" desc="交流输入异常"/>
+			<DO name="Ind2" type="CN_SPS" desc="直流输入异常"/>
+			<DO name="Ind3" type="CN_SPS" desc="交流输出异常"/>
+			<DO name="Ind4" type="CN_SPS" desc="过载"/>
+			<DO name="Ind5" type="CN_SPS" desc="旁路输入异常"/>
+		</LNodeType>
+		<LNodeType id="TH_dbmGGIO" desc="直流母线测量(A.19)" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="AnIn1" type="CN_MV_I16" desc="控母电压"/>
+			<DO name="AnIn2" type="CN_MV_I16" desc="负载电流"/>
+			<DO name="AnIn3" type="CN_MV_I16" desc="母线正对地电压"/>
+			<DO name="AnIn4" type="CN_MV_I16" desc="母线负对地电压"/>
+			<DO name="AnIn5" type="CN_MV_I16" desc="母线正对地绝缘电阻"/>
+			<DO name="AnIn6" type="CN_MV_I16" desc="母线负对地绝缘电阻"/>
+			<DO name="AnIn7" type="CN_MV_I16" desc="交流串入电压"/>
+		</LNodeType>
+		<LNodeType id="TH_btgZBAT" desc="蓄电池组测量(A.15)" lnClass="ZBAT">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="健康状况"/>
+			<DO name="NamPlt" type="CN_LPL" desc="铭牌"/>
+			<DO name="AnIn1" type="CN_MV_I16" desc="蓄电池组电压"/>
+			<DO name="AnIn2" type="CN_MV_I16" desc="蓄电池组放电电流"/>
+		</LNodeType>
+		<LNodeType id="TH_cheGGIO" desc="充电装置(A.13)" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="AnIn1" type="CN_MV_I16" desc="输出电压"/>
+			<DO name="AnIn2" type="CN_MV_I16" desc="输出电流"/>
+			<DO name="AnIn3" type="CN_MV_I16" desc="模块均充电压"/>
+			<DO name="AnIn4" type="CN_MV_I16" desc="模块浮充电压"/>
+			<DO name="Ind1" type="CN_SPS" desc="充电装置故障(任一模块存在故障)"/>
+			<DO name="Ind2" type="CN_SPS" desc="本地/远程控制"/>
+			<DO name="SPCSO1" type="CN_SPC" desc="蓄电池组均浮充切换"/>
+			<DO name="SPCSO2" type="CN_SPC" desc="蓄电池组带载放电测试"/>
+		</LNodeType>
+		<LNodeType id="TH_gswGGIO_32" desc="通用开关(A.6 32路)" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="Ind1" type="CN_SPS" desc="1#状态量"/>
+			<DO name="Ind2" type="CN_SPS" desc="2#状态量"/>
+			<DO name="Ind3" type="CN_SPS" desc="3#状态量"/>
+			<DO name="Ind4" type="CN_SPS" desc="4#状态量"/>
+			<DO name="Ind5" type="CN_SPS" desc="5#状态量"/>
+			<DO name="Ind6" type="CN_SPS" desc="6#状态量"/>
+			<DO name="Ind7" type="CN_SPS" desc="7#状态量"/>
+			<DO name="Ind8" type="CN_SPS" desc="8#状态量"/>
+			<DO name="Ind9" type="CN_SPS" desc="9#状态量"/>
+			<DO name="Ind10" type="CN_SPS" desc="10#状态量"/>
+			<DO name="Ind11" type="CN_SPS" desc="11#状态量"/>
+			<DO name="Ind12" type="CN_SPS" desc="12#状态量"/>
+			<DO name="Ind13" type="CN_SPS" desc="13#状态量"/>
+			<DO name="Ind14" type="CN_SPS" desc="14#状态量"/>
+			<DO name="Ind15" type="CN_SPS" desc="15#状态量"/>
+			<DO name="Ind16" type="CN_SPS" desc="16#状态量"/>
+			<DO name="Ind17" type="CN_SPS" desc="17#状态量"/>
+			<DO name="Ind18" type="CN_SPS" desc="18#状态量"/>
+			<DO name="Ind19" type="CN_SPS" desc="19#状态量"/>
+			<DO name="Ind20" type="CN_SPS" desc="20#状态量"/>
+			<DO name="Ind21" type="CN_SPS" desc="21#状态量"/>
+			<DO name="Ind22" type="CN_SPS" desc="22#状态量"/>
+			<DO name="Ind23" type="CN_SPS" desc="23#状态量"/>
+			<DO name="Ind24" type="CN_SPS" desc="24#状态量"/>
+			<DO name="Ind25" type="CN_SPS" desc="25#状态量"/>
+			<DO name="Ind26" type="CN_SPS" desc="26#状态量"/>
+			<DO name="Ind27" type="CN_SPS" desc="27#状态量"/>
+			<DO name="Ind28" type="CN_SPS" desc="28#状态量"/>
+			<DO name="Ind29" type="CN_SPS" desc="29#状态量"/>
+			<DO name="Ind30" type="CN_SPS" desc="30#状态量"/>
+			<DO name="Ind31" type="CN_SPS" desc="31#状态量"/>
+			<DO name="Ind32" type="CN_SPS" desc="32#状态量"/>
+		</LNodeType>
+		<LNodeType id="TH_aciMMXU_ACDC" desc="直流屏交流进线测量" lnClass="MMXU">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="PPV" type="CN_WYE_I16" desc="相电压"/>
+		</LNodeType>
+		<LNodeType id="TH_acbMMXU" desc="交流母线测量" lnClass="MMXU">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="PhV" type="CN_WYE_I16" desc="相电压"/>
+			<DO name="A" type="CN_WYE_I16" desc="相电流"/>
+			<DO name="Ind1" type="CN_SPS" desc="失电"/>
+			<DO name="Ind2" type="CN_SPS" desc="缺相"/>
+			<DO name="Ind3" type="CN_SPS" desc="欠压"/>
+			<DO name="Ind4" type="CN_SPS" desc="过压"/>
+		</LNodeType>
+		<LNodeType id="TH_gswGGIO_aci" desc="直流屏交流进线状态" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="Ind1" type="CN_SPS" desc="过压"/>
+			<DO name="Ind2" type="CN_SPS" desc="欠压"/>
+			<DO name="Ind3" type="CN_SPS" desc="缺相"/>
+			<DO name="Ind4" type="CN_SPS" desc="失电"/>
+			<DO name="Ind5" type="CN_SPS" desc="异常"/>
+		</LNodeType>
+		<LNodeType id="TH_almGGIO" desc="系统总告警" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="健康状况"/>
+			<DO name="NamPlt" type="CN_LPL" desc="铭牌"/>
+			<DO name="Alm1" type="CN_SPS" desc="综合故障"/>
+			<DO name="Alm2" type="CN_SPS" desc="1#交流监控通讯异常"/>
+			<DO name="Alm3" type="CN_SPS" desc="2#交流监控通讯异常"/>
+			<DO name="Alm4" type="CN_SPS" desc="1#直流监控通讯异常"/>
+			<DO name="Alm5" type="CN_SPS" desc="2#直流监控通讯异常"/>
+			<DO name="Alm6" type="CN_SPS" desc="1#通信电源监控通讯异常"/>
+			<DO name="Alm7" type="CN_SPS" desc="2#通信电源监控通讯异常"/>
+			<DO name="Alm8" type="CN_SPS" desc="1#绝缘监控通讯异常"/>
+			<DO name="Alm9" type="CN_SPS" desc="2#绝缘监控通讯异常"/>
+		</LNodeType>
+		<LNodeType id="TH_fliwGGIO" desc="馈线回路预警" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="健康状况"/>
+			<DO name="NamPlt" type="CN_LPL" desc="铭牌"/>
+			<DO name="Alm1" type="CN_SPS" desc="母线绝缘告警"/>
+			<DO name="Alm2" type="CN_SPS" desc="母线绝缘预警"/>
+			<DO name="Alm3" type="CN_SPS" desc="母线绝缘压差故障"/>
+			<DO name="Alm4" type="CN_SPS" desc="母线交流串入故障"/>
+			<DO name="Alm5" type="CN_SPS" desc="单母线环网故障"/>
+			<DO name="Alm6" type="CN_SPS" desc="双母线互窜故障"/>
+			<DO name="Alm7" type="CN_SPS" desc="平衡电阻投入"/>
+			<DO name="Alm8" type="CN_SPS" desc="母线过压"/>
+			<DO name="Alm9" type="CN_SPS" desc="母线欠压"/>
+			<DO name="Alm10" type="CN_SPS" desc="JY005G-4A主机内部通信故障"/>
+		</LNodeType>
+		<LNodeType id="TH_almdcGGIO" desc="电池组状态" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="健康状况"/>
+			<DO name="NamPlt" type="CN_LPL" desc="铭牌"/>
+			<DO name="AnIn1" type="CN_SPS" desc="电池组过压"/>
+			<DO name="AnIn2" type="CN_SPS" desc="电池组欠压"/>
+			<DO name="AnIn3" type="CN_SPS" desc="电池组过温"/>
+			<DO name="AnIn4" type="CN_SPS" desc="电池组故障"/>
+			<DO name="AnIn5" type="CN_SPS" desc="电池组浮充"/>
+			<DO name="AnIn6" type="CN_SPS" desc="电池组均充"/>
+			<DO name="AnIn7" type="CN_SPS" desc="电池组放电"/>
+			<DO name="AnIn8" type="CN_SPS" desc="电池组测试"/>
+		</LNodeType>
+		<LNodeType id="TH_almacGGIO" desc="交流屏总告警" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="健康状况"/>
+			<DO name="NamPlt" type="CN_LPL" desc="铭牌"/>
+			<DO name="Ind1" type="CN_SPS" desc="母联开关状态"/>
+			<DO name="Ind2" type="CN_SPS" desc="内部通信故障"/>
+			<DO name="Ind3" type="CN_SPS" desc="一路进线跳闸"/>
+			<DO name="Ind4" type="CN_SPS" desc="二路进线跳闸"/>
+			<DO name="Ind5" type="CN_SPS" desc="ATS一路工作状态"/>
+			<DO name="Ind6" type="CN_SPS" desc="ATS二路工作状态"/>
+			<DO name="Ind7" type="CN_SPS" desc="开关量输入总告警"/>
+		</LNodeType>
+		<LNodeType id="TH_almGGIO_zl" desc="直流屏模块通讯故障" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="健康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="Ind1" type="CN_SPS" desc="主机内部通信故障"/>
+			<DO name="Ind2" type="CN_SPS" desc="1#电池巡检通信故障"/>
+			<DO name="Ind3" type="CN_SPS" desc="2#电池巡检通信故障"/>
+			<DO name="Ind4" type="CN_SPS" desc="双电源控制器通信故障"/>
+			<DO name="Ind5" type="CN_SPS" desc="1#UPS通信故障"/>
+			<DO name="Ind6" type="CN_SPS" desc="2#UPS通信故障"/>
+		</LNodeType>
+		<LNodeType id="TH_almGGIO_ac" desc="交流屏模块通讯故障" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="健康状况"/>
+			<DO name="NamPlt" type="CN_LPL" desc="铭牌"/>
+			<DO name="Ind1" type="CN_SPS" desc="1#UPS通讯故障"/>
+			<DO name="Ind2" type="CN_SPS" desc="2#UPS通讯故障"/>
+			<DO name="Ind3" type="CN_SPS" desc="1#INV通讯故障"/>
+			<DO name="Ind4" type="CN_SPS" desc="2#INV通讯故障"/>
+			<DO name="Ind5" type="CN_SPS" desc="ATS通讯故障"/>
+			<DO name="Ind6" type="CN_SPS" desc="1#KGL通信故障"/>
+			<DO name="Ind7" type="CN_SPS" desc="2#KGL通信故障"/>
+			<DO name="Ind8" type="CN_SPS" desc="3#KGL通信故障"/>
+			<DO name="Ind9" type="CN_SPS" desc="4#KGL通信故障"/>
+			<DO name="Ind10" type="CN_SPS" desc="5#KGL通信故障"/>
+			<DO name="Ind11" type="CN_SPS" desc="6#KGL通信故障"/>
+			<DO name="Ind12" type="CN_SPS" desc="7#KGL通信故障"/>
+			<DO name="Ind13" type="CN_SPS" desc="8#KGL通信故障"/>
+			<DO name="Ind14" type="CN_SPS" desc="9#KGL通信故障"/>
+			<DO name="Ind15" type="CN_SPS" desc="10#KGL通信故障"/>
+			<DO name="Ind16" type="CN_SPS" desc="11#KGL通信故障"/>
+			<DO name="Ind17" type="CN_SPS" desc="12#KGL通信故障"/>
+			<DO name="Ind18" type="CN_SPS" desc="13#KGL通信故障"/>
+			<DO name="Ind19" type="CN_SPS" desc="14#KGL通信故障"/>
+			<DO name="Ind20" type="CN_SPS" desc="15#KGL通信故障"/>
+			<DO name="Ind21" type="CN_SPS" desc="16#KGL通信故障"/>
+		</LNodeType>
+		<LNodeType id="TH_almGGIO_TX" desc="通信电源屏告警" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="健康状况"/>
+			<DO name="NamPlt" type="CN_LPL" desc="铭牌"/>
+			<DO name="AnIn1" type="CN_SPS" desc="直流输入过压"/>
+			<DO name="AnIn2" type="CN_SPS" desc="直流输入欠压"/>
+			<DO name="AnIn3" type="CN_SPS" desc="直流输出过压"/>
+			<DO name="AnIn4" type="CN_SPS" desc="直流输出欠压"/>
+			<DO name="AnIn5" type="CN_SPS" desc="输出故障"/>
+		</LNodeType>
+		<LNodeType id="TH_cmsGGIO_mod" desc="通信模块(A.14)" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="AnIn1" type="CN_MV_I16" desc="输出电压"/>
+			<DO name="AnIn2" type="CN_MV_I16" desc="输出电流"/>
+		</LNodeType>
+		<LNodeType id="TH_cheGGIO_mod" desc="通信装置(A.13)" lnClass="GGIO">
+			<DO name="Mod" type="CN_INC_Mod" desc="模式"/>
+			<DO name="Beh" type="CN_INS_Beh" desc="性能"/>
+			<DO name="Health" type="CN_INS_Health" desc="将康状况"/>
+			<DO name="NamPlt" type="CN_LPL_LN0" desc="铭牌"/>
+			<DO name="AnIn1" type="CN_MV_I16" desc="输出电压"/>
+			<DO name="AnIn2" type="CN_MV_I16" desc="输出电流"/>
+		</LNodeType>
+		<DOType id="CN_SPS" cdc="SPS" desc="单点状态信息类">
+			<DA bType="BOOLEAN" name="stVal" fc="ST" dchg="true"/>
+			<DA qchg="true" bType="Quality" name="q" fc="ST"/>
+			<DA bType="Timestamp" name="t" fc="ST"/>
+			<DA bType="Unicode255" name="dU" fc="DC"/>
+		</DOType>
+		<DOType id="CN_INS_Beh" cdc="INS" desc="整数状态类(用于数据对象Beh)">
+			<DA bType="INT32" type="Beh" name="stVal" fc="ST" dchg="true"/>
+			<DA qchg="true" bType="Quality" name="q" fc="ST"/>
+			<DA bType="Timestamp" name="t" fc="ST"/>
+		</DOType>
+		<DOType id="CN_INS_Health" cdc="INS" desc="整数状态类(用于数据对象Health)">
+			<DA bType="INT32" type="Health" name="stVal" fc="ST" dchg="true"/>
+			<DA qchg="true" bType="Quality" name="q" fc="ST"/>
+			<DA bType="Timestamp" name="t" fc="ST"/>
+		</DOType>
+		<DOType id="CN_MV_I16" cdc="MV" desc="测量值">
+			<DA bType="Struct" type="CN_AnalogueValue_I16" name="mag" fc="MX" dchg="true"/>
+			<DA qchg="true" bType="Quality" name="q" fc="MX"/>
+			<DA bType="Timestamp" name="t" fc="MX"/>
+			<DA bType="Struct" type="CN_Units" name="units" fc="CF"/>
+			<DA bType="Unicode255" name="dU" fc="DC"/>
+		</DOType>
+		<DOType id="CN_CMV" cdc="CMV" desc="复数测量值（不包含相位）">
+			<DA bType="Struct" type="CN_Vector" name="cVal" fc="MX" dchg="true"/>
+			<DA qchg="true" bType="Quality" name="q" fc="MX"/>
+			<DA bType="Timestamp" name="t" fc="MX"/>
+			<DA bType="Struct" type="CN_Units" name="units" fc="CF"/>
+			<DA bType="Unicode255" name="dU" fc="DC"/>
+		</DOType>
+		<DOType id="CN_CMV_I16" cdc="CMV" desc="复数测量值（不包含相位）">
+			<DA bType="Struct" type="CN_Vector_I16" name="cVal" fc="MX" dchg="true"/>
+			<DA qchg="true" bType="Quality" name="q" fc="MX"/>
+			<DA bType="Timestamp" name="t" fc="MX"/>
+			<DA bType="Struct" type="CN_Units" name="units" fc="CF"/>
+			<DA bType="Unicode255" name="dU" fc="DC"/>
+		</DOType>
+		<DOType id="CN_WYE" cdc="WYE" desc="三相对地（不包含相位）">
+			<SDO type="CN_CMV" name="phsA"/>
+			<SDO type="CN_CMV" name="phsB"/>
+			<SDO type="CN_CMV" name="phsC"/>
+			<DA bType="Unicode255" name="dU" fc="DC"/>
+		</DOType>
+		<DOType id="CN_WYE_I16" cdc="WYE" desc="三相对地（不包含相位）">
+			<SDO type="CN_CMV_I16" name="phsA"/>
+			<SDO type="CN_CMV_I16" name="phsB"/>
+			<SDO type="CN_CMV_I16" name="phsC"/>
+			<DA bType="Unicode255" name="dU" fc="DC"/>
+		</DOType>
+		<DOType id="CN_SPC" cdc="SPC" desc="可控的单点">
+			<DA bType="Struct" type="CN_SBOw_Oper_SDPC" name="SBOw" fc="CO"/>
+			<DA bType="Struct" type="CN_SBOw_Oper_SDPC" name="Oper" fc="CO"/>
+			<DA bType="Struct" type="CN_Cancel_SDPC" name="Cancel" fc="CO"/>
+			<DA bType="BOOLEAN" name="stVal" fc="ST" dchg="true"/>
+			<DA qchg="true" bType="Quality" name="q" fc="ST"/>
+			<DA bType="Timestamp" name="t" fc="ST"/>
+			<DA bType="Enum" type="ctlModel" name="ctlModel" fc="CF"/>
+			<DA bType="Unicode255" name="dU" fc="DC"/>
+		</DOType>
+		<DOType id="CN_INC_Mod" cdc="INC" desc="可控整数状态(模式)">
+			<DA bType="Enum" type="Mod" name="stVal" fc="ST" dchg="true"/>
+			<DA qchg="true" bType="Quality" name="q" fc="ST"/>
+			<DA bType="Timestamp" name="t" fc="ST"/>
+			<DA bType="Enum" type="ctlModel" name="ctlModel" fc="CF"/>
+		</DOType>
+		<DOType id="CN_LPL_LN0" cdc="LPL" desc="逻辑节点铭牌(LN0)">
+			<DA bType="VisString255" name="vendor" fc="DC"/>
+			<DA bType="VisString255" name="swRev" fc="DC"/>
+			<DA bType="VisString255" name="d" fc="DC"/>
+			<DA bType="Unicode255" name="dU" fc="DC"/>
+			<DA bType="VisString255" name="configRev" fc="DC"/>
+			<DA bType="VisString255" name="ldNs" fc="EX"/>
+		</DOType>
+		<DOType id="CN_LPL" cdc="LPL" desc="逻辑节点铭牌">
+			<DA bType="VisString255" name="vendor" fc="DC"/>
+			<DA bType="VisString255" name="swRev" fc="DC"/>
+			<DA bType="VisString255" name="d" fc="DC"/>
+			<DA bType="Unicode255" name="dU" fc="DC"/>
+		</DOType>
+		<DOType id="CN_DPL" cdc="DPL" desc="设备铭牌">
+			<DA bType="VisString255" name="vendor" fc="DC"/>
+			<DA bType="VisString255" name="hwRev" fc="DC"/>
+			<DA bType="VisString255" name="swRev" fc="DC"/>
+			<DA bType="VisString255" name="serNum" fc="DC"/>
+			<DA bType="VisString255" name="model" fc="DC"/>
+			<DA bType="VisString255" name="location" fc="DC"/>
+		</DOType>
+		<DAType id="CN_AnalogueValue_I16">
+			<BDA bType="INT16" name="f"/>
+		</DAType>
+		<DAType id="CN_AnalogueValue">
+			<BDA bType="FLOAT32" name="f"/>
+		</DAType>
+		<DAType id="CN_Vector_I16">
+			<BDA bType="Struct" type="CN_AnalogueValue_I16" name="mag"/>
+		</DAType>
+		<DAType id="CN_Vector">
+			<BDA bType="Struct" type="CN_AnalogueValue" name="mag"/>
+		</DAType>
+		<DAType id="CN_SBOw_Oper_SDPC">
+			<BDA bType="BOOLEAN" name="ctlVal"/>
+			<BDA bType="Struct" type="CN_Originator" name="origin"/>
+			<BDA bType="INT8U" name="ctlNum"/>
+			<BDA bType="Timestamp" name="T"/>
+			<BDA bType="BOOLEAN" name="Test"/>
+			<BDA bType="Check" name="Check"/>
+		</DAType>
+		<DAType id="CN_Cancel_SDPC">
+			<BDA bType="BOOLEAN" name="ctlVal"/>
+			<BDA bType="Struct" type="CN_Originator" name="origin"/>
+			<BDA bType="INT8U" name="ctlNum"/>
+			<BDA bType="Timestamp" name="T"/>
+			<BDA bType="BOOLEAN" name="Test"/>
+			<BDA bType="Check" name="Check"/>
+		</DAType>
+		<DAType id="CN_Originator">
+			<BDA bType="Enum" type="orCategcbry" name="orCat"/>
+			<BDA bType="Octet64" name="orIdent"/>
+		</DAType>
+		<DAType id="CN_Units">
+			<BDA bType="Enum" type="SIUnit" name="SIUnit"/>
+			<BDA bType="Enum" type="multiplier" name="multiplier"/>
+		</DAType>
+		<EnumType id="ctlModel">
+			<EnumVal ord="0">status-only</EnumVal>
+			<EnumVal ord="1">direct-with-normal-security</EnumVal>
+			<EnumVal ord="2">sbo-with-normal-security</EnumVal>
+			<EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+			<EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+		</EnumType>
+		<EnumType id="orCategcbry">
+			<EnumVal ord="0">not-supported</EnumVal>
+			<EnumVal ord="1">bay-control</EnumVal>
+			<EnumVal ord="2">station-control</EnumVal>
+			<EnumVal ord="3">remote-control</EnumVal>
+			<EnumVal ord="4">automatic-bay</EnumVal>
+			<EnumVal ord="5">automatic-station</EnumVal>
+			<EnumVal ord="6">automatic-remote</EnumVal>
+			<EnumVal ord="7">maintenance</EnumVal>
+			<EnumVal ord="8">process</EnumVal>
+		</EnumType>
+		<EnumType id="multiplier">
+			<EnumVal ord="-24">y</EnumVal>
+			<EnumVal ord="-21">z</EnumVal>
+			<EnumVal ord="-18">a</EnumVal>
+			<EnumVal ord="-15">f</EnumVal>
+			<EnumVal ord="-12">p</EnumVal>
+			<EnumVal ord="-9">n</EnumVal>
+			<EnumVal ord="-6">μ</EnumVal>
+			<EnumVal ord="-3">m</EnumVal>
+			<EnumVal ord="-2">c</EnumVal>
+			<EnumVal ord="-1">d</EnumVal>
+			<EnumVal ord="0"/>
+			<EnumVal ord="1">da</EnumVal>
+			<EnumVal ord="2">h</EnumVal>
+			<EnumVal ord="3">k</EnumVal>
+			<EnumVal ord="6">M</EnumVal>
+			<EnumVal ord="9">G</EnumVal>
+			<EnumVal ord="12">T</EnumVal>
+			<EnumVal ord="15">P</EnumVal>
+			<EnumVal ord="18">E</EnumVal>
+			<EnumVal ord="21">Z</EnumVal>
+			<EnumVal ord="24">Y</EnumVal>
+		</EnumType>
+		<EnumType id="SIUnit">
+			<EnumVal ord="1"/>
+			<EnumVal ord="2">m</EnumVal>
+			<EnumVal ord="3">kg</EnumVal>
+			<EnumVal ord="4">s</EnumVal>
+			<EnumVal ord="5">A</EnumVal>
+			<EnumVal ord="6">K</EnumVal>
+			<EnumVal ord="7">mol</EnumVal>
+			<EnumVal ord="8">cd</EnumVal>
+			<EnumVal ord="9">deg</EnumVal>
+			<EnumVal ord="10">rad</EnumVal>
+			<EnumVal ord="11">sr</EnumVal>
+			<EnumVal ord="21">Gy</EnumVal>
+			<EnumVal ord="22">q</EnumVal>
+			<EnumVal ord="23">°C</EnumVal>
+			<EnumVal ord="24">Sv</EnumVal>
+			<EnumVal ord="25">F</EnumVal>
+			<EnumVal ord="26">C</EnumVal>
+			<EnumVal ord="27">S</EnumVal>
+			<EnumVal ord="28">H</EnumVal>
+			<EnumVal ord="29">V</EnumVal>
+			<EnumVal ord="30">ohm</EnumVal>
+			<EnumVal ord="31">J</EnumVal>
+			<EnumVal ord="32">N</EnumVal>
+			<EnumVal ord="33">Hz</EnumVal>
+			<EnumVal ord="34">lx</EnumVal>
+			<EnumVal ord="35">Lm</EnumVal>
+			<EnumVal ord="36">Wb</EnumVal>
+			<EnumVal ord="37">T</EnumVal>
+			<EnumVal ord="38">W</EnumVal>
+			<EnumVal ord="39">Pa</EnumVal>
+			<EnumVal ord="41">m2</EnumVal>
+			<EnumVal ord="42">m3</EnumVal>
+			<EnumVal ord="43">m/s</EnumVal>
+			<EnumVal ord="44">m/s2</EnumVal>
+			<EnumVal ord="45">m3/s</EnumVal>
+			<EnumVal ord="46">m/m3</EnumVal>
+			<EnumVal ord="47">M</EnumVal>
+			<EnumVal ord="48">kg/m3</EnumVal>
+			<EnumVal ord="49">m2/s</EnumVal>
+			<EnumVal ord="50">W/m K</EnumVal>
+			<EnumVal ord="51">J/K</EnumVal>
+			<EnumVal ord="52">ppm</EnumVal>
+			<EnumVal ord="53">1/s</EnumVal>
+			<EnumVal ord="54">rad/s</EnumVal>
+			<EnumVal ord="61">VA</EnumVal>
+			<EnumVal ord="62">Watts</EnumVal>
+			<EnumVal ord="63">VAr</EnumVal>
+			<EnumVal ord="64">phi</EnumVal>
+			<EnumVal ord="65">cos_phi </EnumVal>
+			<EnumVal ord="66">Vs</EnumVal>
+			<EnumVal ord="67">V2</EnumVal>
+			<EnumVal ord="68">As</EnumVal>
+			<EnumVal ord="69">A2</EnumVal>
+			<EnumVal ord="70">A2t</EnumVal>
+			<EnumVal ord="71">VAh</EnumVal>
+			<EnumVal ord="72">Wh</EnumVal>
+			<EnumVal ord="73">VArh</EnumVal>
+			<EnumVal ord="74">V/Hz</EnumVal>
+			<EnumVal ord="75">b/s</EnumVal>
+		</EnumType>
+		<EnumType id="Mod">
+			<EnumVal ord="1">on</EnumVal>
+			<EnumVal ord="2">blocked</EnumVal>
+			<EnumVal ord="3">test</EnumVal>
+			<EnumVal ord="4">test/blocked</EnumVal>
+			<EnumVal ord="5">off</EnumVal>
+		</EnumType>
+	</DataTypeTemplates>
+</SCL>
